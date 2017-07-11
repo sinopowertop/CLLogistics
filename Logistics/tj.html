@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>tj</title>
+</head>
+
+<body>
+<table width="200" border="1">
+  <tr>
+    <td><%
+ 
+CountFile=Server.MapPath("txtcounter.txt")
+ 
+Set FileObject=Server.CreateObject("Scripting.FileSystemObject")
+ 
+Set Out=FileObject.OpenTextFile(CountFile,1,FALSE,FALSE)
+ 
+counter=Out.ReadLine
+ 
+Out.Close
+ 
+SET FileObject=Server.CreateObject("Scripting.FileSystemObject")
+ 
+Set Out=FileObject.CreateTextFile(CountFile,TRUE,FALSE)
+ 
+Application.lock
+ 
+counter= counter + 1
+ 
+Out.WriteLine(counter)
+ 
+Application.unlock
+ 
+Response.Write"document.write("&counter&")"
+ 
+Out.Close
+ 
+%></td>
+  </tr>
+</table>
+
+</body>
+</html>
