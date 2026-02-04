@@ -1,81 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>以客为尊、服务至上、承先启后、与时俱进</title>
-   <meta content="国际货运,物流,铁路Railway,海运Sea,空运Air,卡车Truck,我们,上海" name="keywords">
-    <meta content="紧密合作，锐意进取，竭诚为社会各界提供专业、精诚的服务。" name="description">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司介绍 - 国际货运物流服务 | 铁路海运空运卡车运输</title>
+    <!-- SEO优化：关键词精简有序、描述贴合页面内容，提升页面相关性 -->
+    <meta name="keywords" content="国际货运,物流服务,铁路运输,海运运输,空运运输,卡车运输,上海物流">
+    <meta name="description" content="深耕国际货运和供应链三十年，提供铁路、海运、空运、卡车一站式物流服务，覆盖一带一路沿线，门到门全程定制服务。">
+    <!-- 移动端优化标签：精简冗余，保留核心适配属性 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="renderer" content="webkit">
     <style>
-    .body_a5bj5j{
-		background-color:#ccc;
-		font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-		
-		}
-		.p2,.p3,.p4,.p5{
-			color:#009;
-			font-size:14px;			
-			
-			}
-			.p1{
-				color:#009;
-			font-size:18px;
-			background:url(img/About.png);
-			background-size:100% 100%;			
-			
-				}
-				hr{
-					border-bottom-color:#930;}
-					.p1{height:350px;}
-					
+        /* 全局样式重置+基础样式：统一盒模型、消除默认边距，提升兼容性 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 1.6; /* 增加行高，提升文字可读性 */
+            padding: 10px; /* 增加内边距，避免内容贴边 */
+        }
+        /* 语义化类名：见名知意，替代随机字符/数字命名 */
+        .back-home {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #009;
+            text-decoration: none;
+        }
+        .back-home:hover {
+            text-decoration: underline; /* 增加hover效果，提升交互性 */
+        }
+        .company-intro {
+            color: #009;
+            font-size: 18px;
+            background: url(img/About.png) no-repeat; /* 增加no-repeat，避免背景图重复 */
+            background-size: 100% 100%;
+            height: 350px;
+            padding: 20px; /* 增加内边距，避免文字贴背景图边缘 */
+        }
+        .service-title {
+            color: #009;
+            font-size: 14px;
+            margin: 15px 0 8px;
+            font-weight: bold; /* 增加加粗，突出服务标题 */
+        }
+        .service-content {
+            margin-bottom: 10px;
+            text-indent: 2em; /* 首行缩进，符合中文阅读习惯 */
+        }
+        /* 分割线样式：统一样式，消除浏览器默认差异 */
+        hr {
+            border: none;
+            border-bottom: 1px solid #930;
+            margin: 20px 0;
+        }
+        /* 响应式适配：小屏设备下适配背景图高度，避免内容溢出 */
+        @media (max-width: 768px) {
+            .company-intro {
+                height: auto;
+                min-height: 200px;
+                padding: 15px;
+            }
+        }
     </style>
-
 </head>
+<body>
+    <!-- 首页链接：增加语义化类名，优化交互 -->
+    <a href="https://sinopower1987.github.io/CLLogistics/index.html" class="back-home">返回首页</a>
 
-<body class="body_a5bj5j">
-<a href="https://sinopower1987.github.io/CLLogistics/index.html">返回首页</a>
-      
-        <p class="p1">
-        <br>
-         公司介绍<br><br>
-       
-       国际货运和供应链三十年经验，海上国际货,海上国际货物运输代理，公路国际货物运输代理，水上国际货物运输代理，航空国际货物运输代理，接受委托，代办：订舱、集装箱拼装拆箱、报关、报检、报验、保险、交付运费、结算、交付杂费，仓储，商务信息咨询，人工装卸服务。"
+    <!-- 公司介绍：使用section语义化标签，替代单纯p标签，明确内容模块 -->
+    <section class="company-intro">
+        公司介绍<br><br>
+        国际货运和供应链三十年经验，海上国际货物运输代理，公路国际货物运输代理，水上国际货物运输代理，航空国际货物运输代理，接受委托，代办：订舱、集装箱拼装拆箱、报关、报检、报验、保险、交付运费、结算、交付杂费，仓储，商务信息咨询，人工装卸服务。
+    </section>
+
+    <hr>
+
+    <!-- 铁路服务模块：语义化标签+规范类名，结构清晰 -->
+    <section class="service-module">
+        <h3 class="service-title">铁路服务</h3>
+        <p class="service-content">
+            我们积极响应政府"一带一路"政策，先后在郑州/苏州/义乌/重庆/成都/长沙/武汉/合肥/西安等城市开辟火车整箱及拼箱业务，与欧洲相互呼应；我们每周有固定的铁路集拼服务从合肥，武汉，长沙到波兰华沙及德国汉堡；同时还可以安排转运到东欧，波罗的海国家，西欧，北欧及英国等地。
         </p>
-     
-   <hr>
-        <p class="p2">
-         铁路服务
+    </section>
+
+    <hr>
+
+    <!-- 海运服务模块 -->
+    <section class="service-module">
+        <h3 class="service-title">海运服务</h3>
+        <p class="service-content">
+            海运直达拼箱作为传统优势项目，现已开通全球30余个国际港口的直拼业务，可满足客户发往世界各地的运送要求，为货主提供门到门的全程服务, 包括DDU (未完税交货) / DDP (完税后交货)等条款。
         </p>
-        <p class="paragraph_PwM6xC">
-         我们积极响应政府"一带一路"政策，先后在郑州/苏州/义乌/重庆/成都/长沙/武汉/合肥/西安等城市开辟火车整箱及拼箱业务，与欧洲相互呼应；我们每周有固定的铁路集拼服务从合肥，武汉，长沙到波兰华沙及德国汉堡；同时还可以安排转运到东欧，波罗的海国家，西欧，北欧及英国等地等地。
+    </section>
+
+    <hr>
+
+    <!-- 空运服务模块 -->
+    <section class="service-module">
+        <h3 class="service-title">空运服务</h3>
+        <p class="service-content">
+            我们空运历经十几年的发展，先后在上海、北京、青岛、天津、广州、深圳、南京、西安、宁波、杭州、厦门等地取得由民航总局颁发的空运一代资质，并且与多家世界知名航空公司签订了合约。
         </p>
-      <hr>
-        <p class="p3">
-         海运服务
+    </section>
+
+    <hr>
+
+    <!-- 卡车服务模块 -->
+    <section class="service-module">
+        <h3 class="service-title">卡车服务</h3>
+        <p class="service-content">
+            目前在国内各主要省市都拥有集装箱卡车、散卡车、海关监管车，超低平板车，气垫车等等，能为客人提供门到门装箱及送货等业务, 为客户降低经营成本，满足客户的物流服务需求。
         </p>
-        <p class="paragraph_PwM6xC">
-         海运直达拼箱作为传统优势项目，现已开通全球30余个国际港口的直拼业务，可满足客户发往世界各地的运送要求，为货主提供门到门的全程服务, 包括DDU (未完税交货) / DDP (完税后交货)等条款。
-        </p>
-      <hr>
-        <p class="p4">
-         空运服务
-        </p>
-        <p class="paragraph_PwM6xC">
-         我们空运历经十几年的发展，先后在上海、北京、青岛、天津、广州、深圳、南京、西安、宁波、杭州、厦门等地取得由民航总局颁发的空运一代资质，并且与多家世界知名航空公司签订了合约。
-        </p>
-       <hr>
-        <p class="p5">
-         卡车服务
-        </p>
-        <p class="paragraph_PwM6xC">
-         目前在国内各主要省市都拥有集装箱卡车、散卡车、海关监管车，超低平板车，气垫车等等，能为客人提供门到门装箱及送货等业务, 为客户降低经营成本，满足客户的物流服务需求。
-        </p>
-      
-   </body>
-   </html>
-  
+    </section>
+
+</body>
+</html>
